@@ -1,13 +1,11 @@
 
 package org.java.esercitazione;
 
-import java.util.Scanner;
+public class Villa extends Abitazione {
+    private int mqGiardino;
 
-public class Villa extends Abitazione{
-   private  int mqGiardino;
-
-    public Villa(String codice, String indirizzo, int cap, String città, int superficie) {
-        super(codice, indirizzo, cap, città, superficie);
+    public Villa(String codice, String indirizzo, int cap, String città, int superficie, int vani, int bagni) {
+        super(codice, indirizzo, cap, città, superficie, vani, bagni);
         this.mqGiardino = mqGiardino;
     }
 
@@ -15,10 +13,14 @@ public class Villa extends Abitazione{
         return mqGiardino;
     }
 
-    public int ReimpostaSuperficie (int superficie, int mqGiardino){
-        Scanner scan = new Scanner(System.in);
-        int nuovaSuperficie = Integer.parseInt(scan.nextLine());
-        return mqGiardino = nuovaSuperficie;
+    @Override
+    public int ReimpostaSuperficie(int superficie) {
+        return super.ReimpostaSuperficie(superficie);
+    }
+
+    public void ReimpostaSuperficie(int superficie, int nuovoMqGiardino) {
+        super.ReimpostaSuperficie(superficie);
+        this.mqGiardino = nuovoMqGiardino;
     }
 
     @Override
@@ -28,3 +30,4 @@ public class Villa extends Abitazione{
                 '}';
     }
 }
+

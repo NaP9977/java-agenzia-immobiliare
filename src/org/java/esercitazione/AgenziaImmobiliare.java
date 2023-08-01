@@ -19,8 +19,39 @@ public class AgenziaImmobiliare {
     public AgenziaImmobiliare(){
         this.listaImmobili = new ArrayList<>();
     }
+ public void CreazioneListaImmobili(Immobili immobile){
+        listaImmobili.add(immobile);
+    }
+
+    public Immobili CercaImmobile (String codice){
+        for(Immobili immobile : listaImmobili) {
+            if (codice.equals(immobile.getCodice())) {
+                return immobile;
+            }
+        }
+            return null;
+        }
+
+
+    public void AumentoPersoneInteressate(String codice, int personeInteressate){
+         for(Immobili immobili : listaImmobili){
+        if(codice.equals(immobili.getCodice(){
+            immobili.incrementaPersoneInteressate();
+            break;
+             }
+
+    }
 
 
 
 
+
+}
+
+    @Override
+    public String toString() {
+        return "AgenziaImmobiliare{" +
+                "listaImmobili=" + listaImmobili +
+                '}';
+    }
 }

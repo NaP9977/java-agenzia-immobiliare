@@ -4,8 +4,9 @@ public class Abitazione extends Immobili {
    private  int vani;
    private  int bagni;
 
-    public Abitazione(String codice, String indirizzo, int cap, String città, int superficie) {
-        super(codice, indirizzo, cap, città, superficie);
+
+    public Abitazione(String codice, String indirizzo, int cap, String città, int i, int superficie, int personeInteressate) {
+        super(codice, indirizzo, cap, città, superficie, superficie, personeInteressate);
     }
 
     public int getVani() {
@@ -15,6 +16,7 @@ public class Abitazione extends Immobili {
     public int getBagni() {
         return bagni;
     }
+
 
     @Override
     public String toString() {

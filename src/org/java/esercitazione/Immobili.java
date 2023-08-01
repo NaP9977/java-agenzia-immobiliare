@@ -12,19 +12,22 @@ package org.java.esercitazione;
 
 import java.util.Scanner;
 
-public class Immobili {
-   private  String codice;
-   private  String indirizzo;
-   private  int cap;
-   private  String città;
+public class Immobili extends AgenziaImmobiliare {
+    private String codice;
+    private String indirizzo;
+    private int cap;
+    private String città;
     private int superficie;
+    private int personeInteressate;
 
-    public Immobili(String codice, String indirizzo, int cap, String città, int superficie){
+
+    public Immobili(String codice, String indirizzo, int cap, String città, int superficie1, int i, int superficie) {
         this.codice = this.codice;
         this.indirizzo = this.indirizzo;
         this.cap = this.cap;
         this.città = this.città;
         this.superficie = this.superficie;
+        this.personeInteressate = 0;
 
     }
 
@@ -33,11 +36,9 @@ public class Immobili {
     }
 
 
-
     public String getCodice() {
         return codice;
     }
-
 
 
     public String getIndirizzo() {
@@ -64,10 +65,18 @@ public class Immobili {
         this.città = città;
     }
 
-    public int ReimpostaSuperficie(int superificie){
+    public int ReimpostaSuperficie(int superificie) {
         Scanner scan = new Scanner(System.in);
         int nuovaSuperficie = Integer.parseInt(scan.nextLine());
         return superificie = nuovaSuperficie;
+    }
+
+    public int getPersoneInteressate() {
+        return personeInteressate;
+    }
+
+    public void incrementaPersoneInteressate() {
+        personeInteressate++;
     }
 
     @Override
@@ -78,6 +87,18 @@ public class Immobili {
                 ", cap=" + cap +
                 ", città='" + città + '\'' +
                 ", superficie=" + superficie +
+                ", personeInteressate=" + personeInteressate +
                 '}';
     }
 }
+
+
+
+
+
+
+
+
+
+
+
