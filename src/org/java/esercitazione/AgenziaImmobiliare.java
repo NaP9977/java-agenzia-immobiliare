@@ -40,16 +40,23 @@ public class AgenziaImmobiliare {
 
 
     public Immobili trovaImmobilePiùPopolare() {
-       Immobili immobilePopolare = null;
+        Immobili immobilePiuPopolare = null;
+
         for (Immobili immobile : listaImmobili) {
+            if (immobilePiuPopolare == null || immobile.getPersoneInteressate() > immobilePiuPopolare.getPersoneInteressate()) {
+                immobilePiuPopolare = immobile;
+                        }
+                    }
 
-            if ( immobilePopolare != null && immobile.getPersoneInteressate() > immobilePopolare.getPersoneInteressate()) {
-                immobilePopolare = immobile;
-            }
+        return immobilePiuPopolare;
+                }
 
-        }
-        return immobilePopolare;
-    }
+
+
+
+
+
+
 
     @Override
     public String toString() {

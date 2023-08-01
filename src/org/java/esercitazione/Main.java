@@ -23,8 +23,8 @@ public class Main {
 
         System.out.println(agenziaImmobiliare.cercaImmobile(codiceDacercare));
 
-villa.reimpostaSuperficie(500, 800);
-System.out.println(agenziaImmobiliare.cercaImmobile(codice4));
+abitazione.reimpostaSuperficie(1000);
+System.out.println(abitazione);
 villa.incrementaPersoneInteressate();
         villa.incrementaPersoneInteressate();
         villa.incrementaPersoneInteressate();

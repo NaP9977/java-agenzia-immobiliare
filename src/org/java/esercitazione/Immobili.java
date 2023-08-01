@@ -57,9 +57,9 @@ public class Immobili extends AgenziaImmobiliare {
 
 
 
-    public int reimpostaSuperficie(int nuovaSuperficie) {
+    public void reimpostaSuperficie(int nuovaSuperficie) {
 
-        return nuovaSuperficie ;
+        this.superficie = nuovaSuperficie ;
     }
 
     public int getPersoneInteressate() {
