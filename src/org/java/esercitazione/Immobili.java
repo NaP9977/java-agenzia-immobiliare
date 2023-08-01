@@ -10,8 +10,6 @@
 //// incrementare questo numero.
 package org.java.esercitazione;
 
-import java.util.Scanner;
-
 public class Immobili extends AgenziaImmobiliare {
     private String codice;
     private String indirizzo;
@@ -59,10 +57,9 @@ public class Immobili extends AgenziaImmobiliare {
 
 
 
-    public int reimpostaSuperficie(int superificie) {
-        Scanner scan = new Scanner(System.in);
-        int nuovaSuperficie = Integer.parseInt(scan.nextLine());
-        return superificie = nuovaSuperficie;
+    public int reimpostaSuperficie(int nuovaSuperficie) {
+
+        return nuovaSuperficie ;
     }
 
     public int getPersoneInteressate() {

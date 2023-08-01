@@ -37,21 +37,16 @@ public class AgenziaImmobiliare {
     }
 
 
-    public void aumentoPersoneInteressate(String codice, int personeInteressate) {
-        for (Immobili immobili : listaImmobili) {
-            if (codice.equals(immobili.getCodice())) {
-                immobili.incrementaPersoneInteressate();
-                break;
-            }
-        }
-    }
+
 
     public Immobili trovaImmobilePiùPopolare() {
-        Immobili immobilePopolare = null;
+       Immobili immobilePopolare = null;
         for (Immobili immobile : listaImmobili) {
-            if (immobile.getPersoneInteressate() > immobilePopolare.getPersoneInteressate()) {
+
+            if ( immobilePopolare != null && immobile.getPersoneInteressate() > immobilePopolare.getPersoneInteressate()) {
                 immobilePopolare = immobile;
             }
+
         }
         return immobilePopolare;
     }

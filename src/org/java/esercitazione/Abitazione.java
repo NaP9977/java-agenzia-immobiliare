@@ -28,8 +28,8 @@ public class Abitazione extends Immobili {
     @Override
     public String toString() {
         return "Abitazione: " +
-                "vani=" + vani +
-                ", bagni=" + bagni +
-                '}';
+                " vani=" + vani +
+                ", bagni=" + bagni + "codice = " + "indirizzo = " + getIndirizzo() + "città = " + getCittà() + "superficie =" + getSuperficie();
+
     }
 }

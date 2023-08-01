@@ -19,7 +19,7 @@ public class Box extends Immobili {
     public String toString() {
         return "Box: " +
                 "postiAuto = " + postiAuto +
-                 "codice = " + getCodice() + "indirizzo = " + getIndirizzo() + "città = " + getCittà() + "superficie =" + getSuperficie();
+                 "codice = " + getCodice() + " indirizzo = " + getIndirizzo() + " città = " + getCittà() + " superficie =" + getSuperficie();
     }
 }
 
