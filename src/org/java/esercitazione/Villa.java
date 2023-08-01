@@ -1,4 +1,6 @@
+
 package org.java.esercitazione;
 
-public class Villa {
+public class Villa extends Abitazione{
+    int mqGiardino;
 }

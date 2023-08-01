@@ -1,4 +1,5 @@
 package org.java.esercitazione;
 
-public class Box {
+public class Box extends Immobili {
+    int postiAuto;
 }
