@@ -20,18 +20,28 @@ public class AgenziaImmobiliare {
         this.listaImmobili = new ArrayList<>();
     }
 
-    public void CreazioneListaImmobili(Immobili immobile) {
+    public void AggiungiImmobili(Immobili immobile) {
         listaImmobili.add(immobile);
     }
 
     public Immobili CercaImmobile(String codice) {
+
         for (Immobili immobile : listaImmobili) {
+
             if (codice.equals(immobile.getCodice())) {
-                return immobile;
+                return immobile ;
+
             }
         }
         return null;
     }
+
+
+
+
+
+
+
 
 
     public void AumentoPersoneInteressate(String codice, int personeInteressate) {

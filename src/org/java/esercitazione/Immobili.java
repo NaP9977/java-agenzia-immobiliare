@@ -22,11 +22,11 @@ public class Immobili extends AgenziaImmobiliare {
 
 
     public Immobili(String codice, String indirizzo, int cap, String città, int superficie) {
-        this.codice = this.codice;
-        this.indirizzo = this.indirizzo;
-        this.cap = this.cap;
-        this.città = this.città;
-        this.superficie = this.superficie;
+        this.codice = codice;
+        this.indirizzo = indirizzo;
+        this.cap = cap;
+        this.città = città;
+        this.superficie = superficie;
         this.personeInteressate = 0;
 
     }
