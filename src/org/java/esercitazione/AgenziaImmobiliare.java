@@ -1,7 +1,26 @@
+//Definire per ciascuna delle tre classi il metodo toString() in modo da fornire una descrizione completa dell’immobile.
+//Definire nella classe Immobile il metodo reimpostaSuperfici che prende in input
+// la nuova superficie.
+//Implementare nella classe Villa l’overload di questo metodo.
+// In questo caso prenderà i parametri superficie e superficieGiardino.
+//Definire una classe AgenziaImmobiliare che contiene una lista di immobili e presenta
+//un metodo per aggiungere un immobile
+//un metodo per la ricerca di un immobile a partire dal codice alfanumerico
+//un metodo per restituire l’immobile che ha avuto il maggior numero di persone interessate
+//Creare una classe Main con metodo main nel quale testare tutte le funzionalità
+// delle classi (modificato)
 package org.java.esercitazione;
 
 import java.util.ArrayList;
 
 public class AgenziaImmobiliare {
-    ArrayList <Immobili> listaImmobili;
+    private ArrayList <Immobili> listaImmobili;
+
+    public AgenziaImmobiliare(){
+        this.listaImmobili = new ArrayList<>();
+    }
+
+
+
+
 }
