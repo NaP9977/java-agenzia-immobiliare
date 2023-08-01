@@ -4,7 +4,7 @@ package org.java.esercitazione;
 public class Villa extends Abitazione {
     private int mqGiardino;
 
-    public Villa(String codice, String indirizzo, int cap, String città, int superficie, int vani, int bagni) {
+    public Villa(String codice, String indirizzo, int cap, String città,  int superficie, int vani, int bagni, int mqGiardino) {
         super(codice, indirizzo, cap, città, superficie, vani, bagni);
         this.mqGiardino = mqGiardino;
     }
@@ -25,9 +25,10 @@ public class Villa extends Abitazione {
 
     @Override
     public String toString() {
-        return "Villa{" +
-                "mqGiardino=" + mqGiardino +
-                '}';
+        return "Villa: " +
+                "mq Giardino = " + getMqGiardino() +  "codice = " + "indirizzo = " + getIndirizzo() + "città = " + getCittà() + "superficie =" + getSuperficie();
     }
-}
+
+    }
+
 

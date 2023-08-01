@@ -21,7 +21,7 @@ public class Immobili extends AgenziaImmobiliare {
     private int personeInteressate;
 
 
-    public Immobili(String codice, String indirizzo, int cap, String città, int superficie1, int i, int superficie) {
+    public Immobili(String codice, String indirizzo, int cap, String città, int superficie) {
         this.codice = this.codice;
         this.indirizzo = this.indirizzo;
         this.cap = this.cap;
@@ -45,25 +45,19 @@ public class Immobili extends AgenziaImmobiliare {
         return indirizzo;
     }
 
-    public void setIndirizzo(String indirizzo) {
-        this.indirizzo = indirizzo;
-    }
+
 
     public int getCap() {
         return cap;
     }
 
-    public void setCap(int cap) {
-        this.cap = cap;
-    }
+
 
     public String getCittà() {
         return città;
     }
 
-    public void setCittà(String città) {
-        this.città = città;
-    }
+
 
     public int ReimpostaSuperficie(int superificie) {
         Scanner scan = new Scanner(System.in);
@@ -81,7 +75,7 @@ public class Immobili extends AgenziaImmobiliare {
 
     @Override
     public String toString() {
-        return "Immobili{" +
+        return "Immobili:" +
                 "codice='" + codice + '\'' +
                 ", indirizzo='" + indirizzo + '\'' +
                 ", cap=" + cap +

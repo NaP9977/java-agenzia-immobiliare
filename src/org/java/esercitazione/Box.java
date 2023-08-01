@@ -4,8 +4,8 @@ public class Box extends Immobili {
     private int postiAuto;
 
 
-    public Box(String codice, String indirizzo, int cap, String città, int superficie, int personeInteressate) {
-        super(codice,indirizzo,cap,città, superficie, superficie, personeInteressate);
+    public Box(String codice, String indirizzo, int cap, String città, int superficie, int postiAuto) {
+        super(codice,indirizzo,cap,città,superficie);
         this.postiAuto = postiAuto;
     }
 
@@ -15,12 +15,11 @@ public class Box extends Immobili {
 
 
 
-
     @Override
     public String toString() {
-        return "Box{" +
-                "postiAuto=" + postiAuto +
-                '}';
+        return "Box: " +
+                "postiAuto = " + postiAuto +
+                 "codice = " + getCodice() + "indirizzo = " + getIndirizzo() + "città = " + getCittà() + "superficie =" + getSuperficie();
     }
 }
 

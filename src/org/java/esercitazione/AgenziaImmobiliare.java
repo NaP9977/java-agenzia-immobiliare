@@ -14,44 +14,53 @@ package org.java.esercitazione;
 import java.util.ArrayList;
 
 public class AgenziaImmobiliare {
-    private ArrayList <Immobili> listaImmobili;
+    private ArrayList<Immobili> listaImmobili;
 
-    public AgenziaImmobiliare(){
+    public AgenziaImmobiliare() {
         this.listaImmobili = new ArrayList<>();
     }
- public void CreazioneListaImmobili(Immobili immobile){
+
+    public void CreazioneListaImmobili(Immobili immobile) {
         listaImmobili.add(immobile);
     }
 
-    public Immobili CercaImmobile (String codice){
-        for(Immobili immobile : listaImmobili) {
+    public Immobili CercaImmobile(String codice) {
+        for (Immobili immobile : listaImmobili) {
             if (codice.equals(immobile.getCodice())) {
                 return immobile;
             }
         }
-            return null;
-        }
-
-
-    public void AumentoPersoneInteressate(String codice, int personeInteressate){
-         for(Immobili immobili : listaImmobili){
-        if(codice.equals(immobili.getCodice(){
-            immobili.incrementaPersoneInteressate();
-            break;
-             }
-
+        return null;
     }
 
 
+    public void AumentoPersoneInteressate(String codice, int personeInteressate) {
+        for (Immobili immobili : listaImmobili) {
+            if (codice.equals(immobili.getCodice())) {
+                immobili.incrementaPersoneInteressate();
+                break;
+            }
+        }
+    }
 
-
-
-}
+            public Immobili TrovaImmobilePiùPopolare(){
+        Immobili immobilePopolare = null;
+        for(Immobili immobile : listaImmobili){
+            if(immobile.getPersoneInteressate() > immobilePopolare.getPersoneInteressate()){
+                immobilePopolare = immobile;
+            }
+        }
+return immobilePopolare;
+            }
 
     @Override
     public String toString() {
-        return "AgenziaImmobiliare{" +
+        return "AgenziaImmobiliare:" +
                 "listaImmobili=" + listaImmobili +
                 '}';
     }
 }
+
+
+
+
