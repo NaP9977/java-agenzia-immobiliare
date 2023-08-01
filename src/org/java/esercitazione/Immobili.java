@@ -59,7 +59,7 @@ public class Immobili extends AgenziaImmobiliare {
 
 
 
-    public int ReimpostaSuperficie(int superificie) {
+    public int reimpostaSuperficie(int superificie) {
         Scanner scan = new Scanner(System.in);
         int nuovaSuperficie = Integer.parseInt(scan.nextLine());
         return superificie = nuovaSuperficie;

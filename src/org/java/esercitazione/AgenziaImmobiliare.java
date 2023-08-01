@@ -20,16 +20,16 @@ public class AgenziaImmobiliare {
         this.listaImmobili = new ArrayList<>();
     }
 
-    public void AggiungiImmobili(Immobili immobile) {
+    public void aggiungiImmobili(Immobili immobile) {
         listaImmobili.add(immobile);
     }
 
-    public Immobili CercaImmobile(String codice) {
+    public Immobili cercaImmobile(String codice) {
 
         for (Immobili immobile : listaImmobili) {
 
             if (codice.equals(immobile.getCodice())) {
-                return immobile ;
+                return immobile;
 
             }
         }
@@ -37,14 +37,7 @@ public class AgenziaImmobiliare {
     }
 
 
-
-
-
-
-
-
-
-    public void AumentoPersoneInteressate(String codice, int personeInteressate) {
+    public void aumentoPersoneInteressate(String codice, int personeInteressate) {
         for (Immobili immobili : listaImmobili) {
             if (codice.equals(immobili.getCodice())) {
                 immobili.incrementaPersoneInteressate();
@@ -53,15 +46,15 @@ public class AgenziaImmobiliare {
         }
     }
 
-            public Immobili TrovaImmobilePiùPopolare(){
+    public Immobili trovaImmobilePiùPopolare() {
         Immobili immobilePopolare = null;
-        for(Immobili immobile : listaImmobili){
-            if(immobile.getPersoneInteressate() > immobilePopolare.getPersoneInteressate()){
+        for (Immobili immobile : listaImmobili) {
+            if (immobile.getPersoneInteressate() > immobilePopolare.getPersoneInteressate()) {
                 immobilePopolare = immobile;
             }
         }
-return immobilePopolare;
-            }
+        return immobilePopolare;
+    }
 
     @Override
     public String toString() {
@@ -69,8 +62,8 @@ return immobilePopolare;
                 "listaImmobili=" + listaImmobili +
                 '}';
     }
-}
 
+}
 
 
 

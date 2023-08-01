@@ -14,12 +14,12 @@ public class Villa extends Abitazione {
     }
 
     @Override
-    public int ReimpostaSuperficie(int superficie) {
-        return super.ReimpostaSuperficie(superficie);
+    public int reimpostaSuperficie(int superficie) {
+        return super.reimpostaSuperficie(superficie);
     }
 
-    public void ReimpostaSuperficie(int superficie, int nuovoMqGiardino) {
-        super.ReimpostaSuperficie(superficie);
+    public void reimpostaSuperficie(int superficie, int nuovoMqGiardino) {
+        super.reimpostaSuperficie(superficie);
         this.mqGiardino = nuovoMqGiardino;
     }
 
